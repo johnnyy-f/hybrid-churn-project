@@ -1,5 +1,14 @@
+# Virtual environment
 venv/
+
+# Python cache
 __pycache__/
 *.pyc
-data/
+
+# MLflow
 mlruns/
+
+# DVC-tracked data (ignore actual data files)
+data/raw/*.csv
+data/processed/*.csv
+data/features/*.parquet
