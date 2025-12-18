@@ -1,14 +1,60 @@
-# Virtual environment
+# ----------------------------------------
+# 1. Project-Specific Files to Exclude
+# ----------------------------------------
+
+# Exclude the 'archive' directory and all its contents and model_explainability
+Archive/
+notebooks/06_model_explainabiliity.ipynb
+test.ipynb
+
+# Exclude temporary data/processed files.
+data/processed/
+data/x_train.pkl
+data/y_train.pkl
+data/x_train_pkl
+data/y_train_pkl
+data/raw
+
+# Exclude model files (often large and should be tracked by DVC/Git LFS, not Git)
+models/
+
+# Exclude reports (often generated artifacts)
+reports/
+
+# ----------------------------------------
+# 2. Virtual Environment
+# ----------------------------------------
+
+# Python virtual environment directory
+/venv/
 venv/
 
-# Python cache
+# ----------------------------------------
+# 3. Python Compiled Files
+# ----------------------------------------
+
+# Byte-compiled files
 __pycache__/
 *.pyc
+*.pyd
+*.so
 
-# MLflow
-mlruns/
+# ----------------------------------------
+# 4. Jupyter Notebook Artifacts
+# ----------------------------------------
 
-# DVC-tracked data (ignore actual data files)
-data/raw/*.csv
-data/processed/*.csv
-data/features/*.parquet
+# Notebook checkpoint directories
+.ipynb_checkpoints/
+
+# ----------------------------------------
+# 5. Editor/OS Artifacts
+# ----------------------------------------
+
+# Visual Studio Code settings and temporary files
+.vscode/
+
+# DVC's internal directory
+.dvc/
+
+# MacOS files
+.DS_Store
