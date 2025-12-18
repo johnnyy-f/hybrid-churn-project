@@ -8,15 +8,15 @@ notebooks/06_model_explainabiliity.ipynb
 test.ipynb
 
 # Exclude temporary data/processed files.
-data/processed/
-data/x_train.pkl
-data/y_train.pkl
-data/x_train_pkl
-data/y_train_pkl
-data/raw
+# data/processed/
+# data/x_train.pkl
+# data/y_train.pkl
+# data/x_train_pkl
+# data/y_train_pkl
+# data/raw
 
 # Exclude model files (often large and should be tracked by DVC/Git LFS, not Git)
-models/
+# models/
 
 # Exclude reports (often generated artifacts)
 reports/
